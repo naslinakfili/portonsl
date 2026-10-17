@@ -10,6 +10,13 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* costums color */
+  --color-hiju: #28e98c;
+  --color-bor: #4f4f4f;           /*for border */
+  --color-tex: #999;              /*for text*/
+  --color-expertise: #bcbcbc;     /*for expertise*/
+  --text-fom: #757575;            /*for form*/
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +30,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.transin {
+  @apply transition-all duration-300;
 }
