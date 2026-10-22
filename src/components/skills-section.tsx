@@ -28,26 +28,25 @@ const skills = [
 
 export default function Skillssection() {
   return (
-    <section>
-      <h4 className="flex justify-center items-center w-fit border rounded-3xl px-4 py-2.25 text-[12px]">
-        MY JOURNEY
+    <section id="Skills" className="py-16 sm:py-[68px]">
+      <h4 className="flex justify-center items-center w-fit border border-bor rounded-3xl px-5 py-2 text-[12px] uppercase tracking-wider mb-10 sm:mb-[53px]">
+        MY SKILLS
       </h4>
-      <div className="text-[48px] leading-15">
+      <div className="text-3xl sm:text-4xl lg:text-5xl font-light leading-tight mb-10">
         My <span className="text-hiju">Expertise</span>
       </div>
-      <div className="grid w-full grid-cols-[repeat(auto-fit,104px)] justify-between gap-4">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3.5 sm:gap-5">
         {skills.map(({ name, icon: Icon }) => (
           <div
             key={name}
-            className="transin flex justify-center items-center flex-col gap-1 border-2 border-ex w-26 h-26 p-3 rounded-[20px] text-[12px] group hover:border-hiju text-expertise"
+            className="transin flex justify-center items-center flex-col gap-2 border-2 border-ex aspect-square p-2 sm:p-3 rounded-[20px] text-[11px] sm:text-[13px] group hover:border-hiju text-expertise hover:text-hiju"
           >
             <Icon
               role="img"
               aria-label={name}
-              size="4em"
-              className="transin group-hover:text-hiju group-hover:scale-110"
+              className="transin text-3xl sm:text-4xl group-hover:scale-110"
             />
-            <p className="transin group-hover:text-hiju">{name}</p>
+            <p className="transin text-center font-medium leading-tight">{name}</p>
           </div>
         ))}
       </div>
